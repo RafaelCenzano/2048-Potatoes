@@ -19,9 +19,9 @@ window.fakeStorage = {
 };
 
 function LocalStorageManager() {
-  this.bestScoreKey     = "bestScoreCupcakes";
-  this.bestPointsKey    = "bestPointsCupcakes";
-  this.gameStateKey     = "gameStateCupcakes";
+  this.bestScoreKey     = "bestScorePotatoes";
+  this.bestPointsKey    = "bestPointsPotatoes";
+  this.gameStateKey     = "gameStatePotatoes";
 
   var supported = this.localStorageSupported();
   this.storage = supported ? window.localStorage : window.fakeStorage;

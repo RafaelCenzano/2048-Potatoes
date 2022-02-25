@@ -171,12 +171,11 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "giampiex");
-  tweet.setAttribute("data-url", "http://git.io/cupcakes");
-  tweet.setAttribute("data-counturl", "http://0x0800.github.io/2048-CUPCAKES");
+  tweet.setAttribute("data-url", "https://potato2048.rafaelcenzano.com/");
+  tweet.setAttribute("data-counturl", "https://github.com/RafaelCenzano/2048-Potatoes");
   tweet.textContent = "Tweet";
 
-  var text = Localize("tweet1") + Localize( this.score ).toUpperCase() + '", ' + this.points + " Kcal " + Localize("tweet2");
+  var text = Localize("tweet1") + Localize( this.score ).toUpperCase() + '", ' + this.points + " Points " + Localize("tweet2");
   tweet.setAttribute("data-text", text);
 
   return tweet;
