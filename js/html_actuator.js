@@ -166,17 +166,3 @@ HTMLActuator.prototype.clearMessage = function () {
   this.messageContainer.classList.remove("game-won");
   this.messageContainer.classList.remove("game-over");
 };
-
-HTMLActuator.prototype.scoreTweetButton = function () {
-  var tweet = document.createElement("a");
-  tweet.classList.add("twitter-share-button");
-  tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-url", "https://potato2048.rafaelcenzano.com/");
-  tweet.setAttribute("data-counturl", "https://github.com/RafaelCenzano/2048-Potatoes");
-  tweet.textContent = "Tweet";
-
-  var text = Localize("tweet1") + Localize( this.score ).toUpperCase() + '", ' + this.points + " Points " + Localize("tweet2");
-  tweet.setAttribute("data-text", text);
-
-  return tweet;
-};
