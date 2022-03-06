@@ -867,6 +867,16 @@ hr {
   background: #582e74;
   box-shadow: 0 0 30px 5px rgba(0, 0, 255, 0.7), inset 0 0 0 1px rgba(255, 255, 255, 0.43); }
 
+.cell-16384 {
+  color: white;
+  background: #582e74;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 255, 0.8), inset 0 0 0 1px rgba(255, 255, 255, 0.5); }
+
+.cell-32768 {
+  color: white;
+  background: #582e74;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 255, 0.9), inset 0 0 0 1px rgba(255, 255, 255, 0.56); }
+
 .repo-link {
   margin-top: 40px;
   margin-right: 20px;
