@@ -25,6 +25,8 @@ String.toLocaleString({
     '%2048'                 : 'shoestring fries',
     '%4096'                 : 'potato chips',
     '%8192'                 : 'hasselback potato',
+    '%16384'                : 'tater tots',
+    '%32768'                : '???',
     '%p0'                   : 'potato',
     '%p4'                   : 'home fries',
     '%p8'                   : 'potato gratin',
@@ -37,7 +39,9 @@ String.toLocaleString({
     '%p1024'                : 'waffle fries',
     '%p2048'                : 'shoestring fries',
     '%p4096'                : 'potato chips',
-    '%p8192'                : 'hasselback potato'
+    '%p8192'                : 'hasselback potato',
+    '%p16384'               : 'tater tots',
+    '%p32768'               : '???'
   }
 
 });

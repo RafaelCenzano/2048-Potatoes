@@ -31,6 +31,8 @@ function kcal(exp) {
   kcal[2048]=2000;
   kcal[4096]=3000;
   kcal[8192]=5000;
+  kcal[16384]=10000;
+  kcal[32768]=25000;
   return kcal[exp];
 }
 
@@ -58,7 +60,7 @@ GameManager.prototype.crowd = function () {
       counter++;
       var value = Math.pow(2, counter);
       var tile = new Tile({ x: j, y: i }, value);
-      if (value <= 8192) this.grid.insertTile(tile);
+      if (value <= 32768) this.grid.insertTile(tile);
     }
   }
 };
@@ -134,7 +136,7 @@ GameManager.prototype.localizeElements = function () {
 GameManager.prototype.fillLegend = function () {
 
   var legend = document.getElementsByClassName("tile-legend");
-  for (var i = 1; i <= 13; i++) {
+  for (var i = 1; i <= 15; i++) {
     var exp = Math.pow(2, i);
     var row = document.createElement("div");
     var grid = document.createElement("div");
